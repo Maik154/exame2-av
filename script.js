@@ -44,6 +44,7 @@ function mostrarProductos(productos) {
         btn.setAttribute("value", "Comprar");
         btn.addEventListener("click", comprar);
         //btn.addEventListener("click", comprar("manzanas", 1));
+        //el addeventListener necesita que la función que le pases sea sin parentesis
         let idBtnManzana = "btn" + Object.values(productos)[i].nombre;
         btn.setAttribute("id", idBtnManzana);
         div.appendChild(btn);
